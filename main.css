@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+main {
+  height: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.title {
+  background-color: #64748b;
+  flex-basis: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.file-operations {
+  background-color: aliceblue;
+  flex-basis: 40px;
+  text-align: center;
+  display: flex;
+}
+
+.file-operation {
+  flex-grow: 1;
+}
+
+#file-path {
+  flex-basis: 85%;
+}
+
+#file-upload {
+  display: none;
+}
+
+label {
+  align-self: center;
+  margin: 0 10px;
+}
+
+.contents {
+  flex-grow: 1;
+  display: flex;
+}
+
+#folder-navigation {
+  flex-basis: 20%;
+  flex-grow: 1;
+  background-color: aqua;
+  height: 100%;
+}
+
+#scripts {
+  flex-basis: 60%;
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+#script-content {
+  background-color: bisque;
+  flex-basis: 70%;
+  flex-grow: 1;
+}
+
+#execution-err {
+  background-color: burlywood;
+  flex-basis: 30%;
+  flex-grow: 1;
+}
+
+.script-row {
+  height: 5%;
+}
+
+.even {
+  background-color: #fdba74;
+}
+
+.odd {
+  background-color: #fb923c;
+}
+
+.scrollable {
+  overflow-y: auto;
+}
+
+.script-row {
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+}
+
+.delete-container {
+  align-self: center;
+  transform: translateY(-5px);
+  margin-left: 10px;
+}
+
+.checkbox-wrapper-2 {
+  flex-basis: 5%;
+}
+
+.delete-container {
+  flex-basis: 10%;
+}
+
+.script-line {
+  flex-basis: 80%;
+  flex-grow: 1;
+  color: grey;
+}
